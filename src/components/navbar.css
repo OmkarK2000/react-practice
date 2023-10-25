@@ -1,0 +1,59 @@
+.navbar{
+    height: 50px;
+    background-color: blueviolet;
+}
+
+ul li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    position: relative;
+}
+
+button{
+    display: none;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ccc;
+}
+button:active{
+    background-color: aliceblue;
+}
+
+.toggle ul{
+    background-color: blueviolet;
+}
+
+.toggle li{
+    display: inline;
+    /* background-color: red; */
+}
+
+@media (max-width: 768px){
+    button{
+        display: inline;
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    ul li{
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+        height: 300px;
+    }
+}
